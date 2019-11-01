@@ -1,0 +1,11 @@
+---
+apiVersion: flux.weave.works/v1beta1
+kind: HelmRelease
+metadata:
+  name: ambassador 
+  namespace: infra
+spec:
+  chart:
+    repository: https://kubernetes-charts.storage.googleapis.com/
+    name: ambassador
+    version: 4.4.4 
